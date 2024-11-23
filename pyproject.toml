@@ -1,21 +1,21 @@
 [tool.poetry]
-name = "New Project" #TODO: Change this
+name = "TSP for EKOD Servis"
 version = "0.0.1"
 readme = "README.md"
 
-description = "New Project" #TODO: Change this
+description = "Web app solution of TSP problem for EKOD Servis sro. Input is an GPX of points from mapy.cz, output is an URL link for navigation"
 
 authors = [
   "Vít Koštejn <v.kostejn.vk@gmail.com>"
 ]
 
-repository = "https://github.com/outfindo/..." #TODO: Change this
-homepage = "https://project.com" #TODO: Change this
+repository = "https://github.com/kostejnv/TSP-for-ekod"
+homepage = "https://ekod.kostejnv.cz"
 
 
 [tool.poetry.dependencies]
 # Compatible Python versions
-python = "^3.12"
+python = "^3.11"
 fastapi = "^0.109.1"
 uvicorn = "^0.27.0.post1"
 jinja2 = "^3.1.3"
@@ -30,7 +30,6 @@ miniopy-async = "^1.19"
 aiohttp = "^3.9"
 aiocache = "^0.12"
 pydantic="^2.8"
-
 numpy = "^1.26.4"
 pandas = "^2.2.1"
 
@@ -42,7 +41,6 @@ ruff = "^0.2.0"
 [tool.poetry.group.dev.dependencies]
 ruff = "^0.2.0"
 pytest = "^8.0.0"
-ipykernel = "^6.29.5"
 
 [[tool.poetry.source]]
 name = "pypi"
