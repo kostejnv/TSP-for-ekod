@@ -9,8 +9,8 @@ from app.api.router import router
 from app.api.ui_router import router as ui_router
 
 app = FastAPI(
-    title="ProjectName",
-    description="ProjectName is a tool for XYZ.",
+    title="Ekod TSP Solution",
+    description="Ekod TSP Solution",
     version="0.1.0",
 )
 
