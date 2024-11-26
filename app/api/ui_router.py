@@ -13,8 +13,8 @@ settings = Settings()
 logger = logging.getLogger(__name__)
 templates = Jinja2Templates(directory="static/templates")
 
-@router.get("/test")
-def testing_page(request: Request):
-    """Render the testing page."""
-    logger.info("Rendering the testing page")
-    return templates.TemplateResponse("test.html", {"request": request})
+@router.get("/")
+def index(request: Request):
+    """Render the index page."""
+    logger.info("Rendering the index page")
+    return templates.TemplateResponse("index.html", {"request": request})

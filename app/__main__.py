@@ -1,6 +1,6 @@
 import logging
 
-from fastapi import FastAPI, Request, status
+from fastapi import FastAPI, status
 from fastapi.responses import JSONResponse
 from fastapi.staticfiles import StaticFiles
 from fastapi.templating import Jinja2Templates
@@ -25,11 +25,6 @@ templates = Jinja2Templates(directory="static/templates")
 logging.basicConfig(
     level=logging.INFO, format="%(asctime)s - %(levelname)s - %(message)s",
 )
-
-@app.get("/")
-def index(request: Request):
-    """Index page."""
-    return templates.TemplateResponse("index.html", {"request": request})
 
 @app.get("/health-check")
 def health_check() -> JSONResponse:
